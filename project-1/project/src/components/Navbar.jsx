@@ -24,10 +24,8 @@ const Navbar = () => {
 
   const protectedPages = ["/post-task", "/accept-task", "/feeds", "/profile"];
 
-  // Filter links: show only Home for unauthenticated users, show all for authenticated
-  const links = isAuthenticated 
-    ? allLinks 
-    : allLinks.filter(link => link.path === "/");
+  // Always show all links
+  const links = allLinks;
 
   const handleNavigation = (path) => {
     setIsOpen(false);
