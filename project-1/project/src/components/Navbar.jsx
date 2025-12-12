@@ -20,10 +20,11 @@ const Navbar = () => {
     { name: "Post Task", path: "/post-task" },
     { name: "Accept Task", path: "/accept-task" },
     { name: "Feeds", path: "/feeds" },
+    { name: "Maps", path: "/discovery-map" },
     { name: "Profile", path: "/profile" },
   ];
 
-  const protectedPages = ["/post-task", "/accept-task", "/feeds", "/profile"];
+  const protectedPages = ["/post-task", "/accept-task", "/feeds", "/profile", "/discovery-map"];
 
   // Always show all links
   const links = allLinks;
